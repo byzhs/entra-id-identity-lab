@@ -4,7 +4,7 @@ Hands-on identity administration in Microsoft Entra ID (formerly Azure Active Di
 
 This is the cloud counterpart to my on-premises [Active Directory home lab](https://github.com/byzhs/active-directory-home-lab). The same departments and group names are used in both, so the two can be compared directly. The users are fictional lab accounts.
 
-![Users](entra-id-lab/screenshots/01-users-list.png)
+![Users](screenshots/01-users-list.png)
 
 ## Environment
 
@@ -30,32 +30,32 @@ This is the cloud counterpart to my on-premises [Active Directory home lab](http
 ### Users and groups
 Accounts are organized by department, and access is granted through security groups, not to individuals.
 
-![Groups](entra-id-lab/screenshots/02-groups-list.png)
-![GRP-Sales members](entra-id-lab/screenshots/03-grp-sales-members.png)
+![Groups](screenshots/02-groups-list.png)
+![GRP-Sales members](screenshots/03-grp-sales-members.png)
 
 ### Password reset
 An administrator reset issues a temporary password. The user must replace it the first time they sign in, so the help desk never knows the user's real password.
 
-![Password reset](entra-id-lab/screenshots/04-password-reset.png)
-![Forced password change](entra-id-lab/screenshots/05-forced-password-change.png)
-![Signed in as the user](entra-id-lab/screenshots/06-signed-in-as-maria.png)
+![Password reset](screenshots/04-password-reset.png)
+![Forced password change](screenshots/05-forced-password-change.png)
+![Signed in as the user](screenshots/06-signed-in-as-maria.png)
 
 ### Offboarding a leaver
 The account is disabled, active sessions are revoked, and group membership is removed. The account is disabled, not deleted, so data and history are kept.
 
-![Account disabled](entra-id-lab/screenshots/07-leaver-account-disabled.png)
-![Group after offboarding](entra-id-lab/screenshots/08-grp-sales-after-offboarding.png)
+![Account disabled](screenshots/07-leaver-account-disabled.png)
+![Group after offboarding](screenshots/08-grp-sales-after-offboarding.png)
 
 ### Least privilege
 The IT support account holds the Helpdesk Administrator role, which can reset passwords for non-administrators but cannot change tenant settings or other admins.
 
-![Helpdesk Administrator role](entra-id-lab/screenshots/09-helpdesk-admin-role.png)
+![Helpdesk Administrator role](screenshots/09-helpdesk-admin-role.png)
 
 ### Security baseline and audit trail
 Security defaults require multi-factor authentication registration for all users. The audit log records each administrative action.
 
-![Security defaults](entra-id-lab/screenshots/10-security-defaults-enabled.png)
-![Audit log](entra-id-lab/screenshots/11-audit-log.png)
+![Security defaults](screenshots/10-security-defaults-enabled.png)
+![Audit log](screenshots/11-audit-log.png)
 
 ## What I learned
 
